@@ -101,5 +101,16 @@ get.unique.values<-function(x){
   x[!duplicated(x)]
 }
 
+#to process a vector and return the absolute difference of 
+#every element from the mean
+
+v<-rnorm(100,mean=100,sd=10)
+d<-sapply(v,function(x,y)abs(x-y),mean(v))
+
+t<-seq(-100,100,by=1)
+f.t<-sapply(t,function(x)3*x^2+5*x+10)
+
+
+
 
 
