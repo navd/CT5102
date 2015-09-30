@@ -8,7 +8,7 @@ tapply(s$income,s$gender,mean)
 
 # we can apply a pair of factors
 
-s$over25<-factor(ifelse(s$age>25,">25","<25"))
+s$age.status<-factor(ifelse(s$age>25,">25","<=25"))
 
 tapply(s$income,list(s$gender,s$over25),mean)
 

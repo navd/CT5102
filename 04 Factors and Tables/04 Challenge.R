@@ -11,7 +11,7 @@ gender<-sample(c("Male","Female"),1000,replace=T,prob=c(.6,.4))
 status<-sample(c("Poor","Improved","Excellent"),
                1000,replace=T,prob=c(.3,.4,.3))
 
-df<-data.frame(ids,ages,diabetes,status,gender)
+df<-data.frame(ids,age,diabetes,status,gender)
 
 qplot(data=df,x=age,y=status,color=gender)
 
